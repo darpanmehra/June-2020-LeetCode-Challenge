@@ -25,7 +25,7 @@ Output:
 #         self.right = right
 class Solution:
     def invertTree(self, root: TreeNode) -> TreeNode:
-        if root:
+        if root not None:
             root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
             return root
         return None
