@@ -38,3 +38,4 @@ class Solution:
                 root = root.left
             else:
                 root = root.right
+        return None
